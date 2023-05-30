@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "GoogleBookSearch",
+    "description": "A Book Search book created using React Native",
+    "slug": "GoogleBook",
+    "privacy": "public",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.10",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "primaryColor": "#5e72e4",
+    "splash": {
+      "image": "./assets/splash/Splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Google.BookSearch"
+    },
+    "android": {
+      "package": "com.Google.BookSearch",
+      "permissions": [],
+      "versionCode": 11,
+      "splash": {
+        "backgroundColor": "#ffffff",
+        "resizeMode": "native",
+        "mdpi": "./assets/splash/Splash.png",
+        "hdpi": "./assets/splash/Splash@1.5x.png",
+        "xhdpi": "./assets/splash/Splash@2x.png",
+        "xxhdpi": "./assets/splash/Splash@3x.png",
+        "xxxhdpi": "./assets/splash/Splash@4x.png"
+      }
+    },
+    
+    "extra": {
+      "bugsnag": {
+        "apiKey": "1c07488eccf115775057abea410f9b03"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
